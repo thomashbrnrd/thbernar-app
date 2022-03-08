@@ -4,7 +4,7 @@ metadata:
   labels:
     app: thbernar
     app.kubernetes.io/instance: thbernar-app
-  name: app-service
+  name: thbernar-service
   namespace: dev
 spec:
   ports:

@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: thbernar
+    app.kubernetes.io/instance: thbernar-app
+  name: app-deployment
+  namespace: dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: thbernar
+  template:
+    metadata:
+      labels:
+        app: thbernar
+    spec:
+      containers:
+        - image: wil42/playground:v1
+          imagePullPolicy: Always
+          name: thbernar
+          ports:
+            - containerPort: 80

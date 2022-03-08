@@ -3,7 +3,6 @@ kind: Service
 metadata:
   labels:
     app: thbernar
-    app.kubernetes.io/instance: thbernar-app
   name: thbernar-service
   namespace: dev
 spec:

@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   labels:
     app: thbernar
-    app.kubernetes.io/instance: thbernar-app
   name: thbernar-deployment
   namespace: dev
 spec:

@@ -4,7 +4,7 @@ metadata:
   labels:
     app: thbernar
     app.kubernetes.io/instance: thbernar-app
-  name: app-deployment
+  name: thbernar-deployment
   namespace: dev
 spec:
   replicas: 1
@@ -21,4 +21,4 @@ spec:
           imagePullPolicy: Always
           name: thbernar
           ports:
-            - containerPort: 80
+            - containerPort: 8888

@@ -16,7 +16,7 @@ spec:
         app: thbernar
     spec:
       containers:
-        - image: wil42/playground:v1
+        - image: wil42/playground:v2
           imagePullPolicy: Always
           name: thbernar
           ports:
